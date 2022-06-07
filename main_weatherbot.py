@@ -103,7 +103,7 @@ async def get_weather(message: types.Message):
         sunset_timestamp = datetime.datetime.fromtimestamp(data["sys"]["sunset"])
         length_of_the_day = datetime.datetime.fromtimestamp(data["sys"]["sunset"]) - datetime.datetime.fromtimestamp(data["sys"]["sunrise"])
 
-        await message.reply(f"{datetime.datetime.now().strftime('%Y-%m-%d %H:%M')}.\n"
+        await message.reply(
               f"Населений пункт: {city}\n"
               f"Температура: {cur_weather} C° | {wd}\n"
               f"Вітер: {wind} м/с\n"

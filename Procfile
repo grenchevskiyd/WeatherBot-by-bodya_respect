@@ -1,1 +1,1 @@
-bot: python3 main_weatherbot.py
+web: python3 main_weatherbot.py
